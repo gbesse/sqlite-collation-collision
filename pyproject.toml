@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-collation-collision"
+version = "0.1.0a1"
+description = "FR: Détecter les collisions de clés selon la collation | EN: Detect key collisions under collations | ES: Detectar colisiones de claves según cotejo"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+sqlite-collation-collision = "sqlite_collation_collision.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["sqlite_collation_collision*"]
